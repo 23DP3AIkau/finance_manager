@@ -1,6 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
-
+using System.Text.Json;
 
 namespace PersonalFinanceManager
 {
@@ -10,18 +11,68 @@ namespace PersonalFinanceManager
         public decimal Amount { get; set; }
     }
 
+    class Account
+    {
+        public string AccountName { get; set; }
+        public List<decimal> Incomes { get; set; }
+        public List<Expense> Expenses { get; set; }
+
+        public Account()
+        {
+            Incomes = new List<decimal>();
+            Expenses = new List<Expense>();
+        }
+    }
+
     class Program
     {
-        static List<decimal> incomes = new List<decimal>();
-        static List<Expense> expenses = new List<Expense>();
+        // Pagaidam izmantoju debug caur bin folder
+        static string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\data\\accounts.json");
+        static List<Account> accounts = new List<Account>();
+        static Account currentAccount;
+
         public static void Main(string[] args)
         {
             Console.Title = "Personal Finance Manager";
             Console.ForegroundColor = ConsoleColor.Cyan;
 
-            Console.WriteLine("Welcome to Alan's Personal FInance Manager!");
+            LoadAccounts();
 
-            while (true) 
+            if (accounts.Count == 0)
+            {
+                Console.WriteLine("No accounts found. Please create a new account.");
+                CreateNewAccount();
+            }
+            else
+            {
+                Console.WriteLine("Select an account by number or type 'create' to create a new account:");
+                for (int i = 0; i < accounts.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {accounts[i].AccountName}");
+                }
+                string input = Console.ReadLine();
+                if (input.ToLower() == "create")
+                {
+                    CreateNewAccount();
+                }
+                else
+                {
+                    if (int.TryParse(input, out int selectedIndex) && selectedIndex >= 1 && selectedIndex <= accounts.Count)
+                    {
+                        currentAccount = accounts[selectedIndex - 1];
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid selection. Creating new account.");
+                        CreateNewAccount();
+                    }
+                }
+            }
+
+            Console.Clear();
+            Console.WriteLine($"Current account: {currentAccount.AccountName}");
+
+            while (true)
             {
                 Console.WriteLine("\n===========================");
                 Console.WriteLine("1. Add Income");
@@ -31,7 +82,7 @@ namespace PersonalFinanceManager
                 Console.WriteLine("5. Exit");
                 Console.WriteLine("===========================");
 
-                Console.WriteLine("\n");
+                Console.Write("\nEnter your choice: ");
                 string choice = Console.ReadLine();
 
                 switch (choice)
@@ -49,12 +100,50 @@ namespace PersonalFinanceManager
                         SetBudgets();
                         break;
                     case "5":
-
+                        Console.WriteLine("\nThank you for using Personal Finance Manager. Goodbye!");
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid choice. Please try again");
                         break;
-                        
                 }
-                    
             }
+        }
+
+        static void LoadAccounts()
+        {
+            if (File.Exists(filePath))
+            {
+                string json = File.ReadAllText(filePath);
+                try
+                {
+                    accounts = JsonSerializer.Deserialize<List<Account>>(json);
+                    if (accounts == null)
+                    {
+                        accounts = new List<Account>();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error reading accounts file: " + ex.Message);
+                    accounts = new List<Account>();
+                }
+            }
+        }
+
+        static void SaveAccounts()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string json = JsonSerializer.Serialize(accounts, options);
+            File.WriteAllText(filePath, json);
+        }
+
+        static void CreateNewAccount()
+        {
+            Console.WriteLine("Enter new account name:");
+            string name = Console.ReadLine();
+            currentAccount = new Account { AccountName = name };
+            accounts.Add(currentAccount);
+            SaveAccounts();
         }
 
         static void AddIncome()
@@ -64,13 +153,14 @@ namespace PersonalFinanceManager
             Console.WriteLine("Add Income");
             Console.WriteLine("===========================");
 
-            Console.WriteLine("Enter the income amount: ");
+            Console.Write("Enter the income amount: ");
             if (decimal.TryParse(Console.ReadLine(), out decimal income))
             {
-                incomes.Add(income);
+                currentAccount.Incomes.Add(income);
+                SaveAccounts();
                 Console.WriteLine("\nIncome added successfully!");
             }
-            else 
+            else
             {
                 Console.WriteLine("\nInvalid input. Please enter a valid decimal value.");
             }
@@ -87,19 +177,20 @@ namespace PersonalFinanceManager
             Console.WriteLine("Add Expense");
             Console.WriteLine("===========================");
 
-            Console.WriteLine("Enter the item name: ");
+            Console.Write("Enter the item name: ");
             string itemName = Console.ReadLine();
 
-            Console.WriteLine("Enter the expense amount: ");
+            Console.Write("Enter the expense amount: ");
             if (decimal.TryParse(Console.ReadLine(), out decimal expenseAmount))
             {
                 Expense expense = new Expense { ItemName = itemName, Amount = expenseAmount };
-                expenses.Add(expense);
-                Console.WriteLine("\nExpense added succefully!");
+                currentAccount.Expenses.Add(expense);
+                SaveAccounts();
+                Console.WriteLine("\nExpense added successfully!");
             }
             else
             {
-                Console.WriteLine("\nPress any key to continue...");
+                Console.WriteLine("\nInvalid input. Please enter a valid decimal value.");
             }
 
             Console.WriteLine("\nPress any key to continue...");
@@ -111,19 +202,19 @@ namespace PersonalFinanceManager
         {
             Console.Clear();
             Console.WriteLine("===========================");
-            Console.WriteLine("Add Expense");
+            Console.WriteLine("Calculate Totals");
             Console.WriteLine("===========================");
 
             decimal totalIncome = 0;
             decimal totalExpenses = 0;
 
-            foreach (var income in incomes)
+            foreach (var income in currentAccount.Incomes)
             {
                 totalIncome += income;
             }
 
             Console.WriteLine("\nExpenses:");
-            foreach (var expense in expenses)
+            foreach (var expense in currentAccount.Expenses)
             {
                 totalExpenses += expense.Amount;
                 Console.WriteLine($"{expense.ItemName}: {expense.Amount:C}");
@@ -144,10 +235,10 @@ namespace PersonalFinanceManager
         {
             Console.Clear();
             Console.WriteLine("===========================");
-            Console.WriteLine("Add Expense");
+            Console.WriteLine("Set Budgets");
             Console.WriteLine("===========================");
 
-            Console.WriteLine("Enter the budget amount: ");
+            Console.Write("Enter the budget amount: ");
             if (decimal.TryParse(Console.ReadLine(), out decimal budget))
             {
                 Console.WriteLine("\nPlease select a category:");
@@ -175,7 +266,6 @@ namespace PersonalFinanceManager
                     default:
                         Console.WriteLine("\nInvalid choice. Please try again.");
                         break;
-
                 }
             }
             else
@@ -190,6 +280,7 @@ namespace PersonalFinanceManager
         static void DisplayBudget(string category, decimal budget)
         {
             Console.WriteLine($"\nBudget for {category} set to {budget:C}");
+            // Papildu funkcionalitāti – šeit var pievienot budžeta saglabāšanu konta datos
         }
     }
 }
