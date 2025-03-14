@@ -1,0 +1,19 @@
+[
+  {
+    "AccountName": "Alans",
+    "Incomes": [],
+    "Expenses": []
+  },
+  {
+    "AccountName": "Ivans",
+    "Incomes": [
+      1000
+    ],
+    "Expenses": [
+      {
+        "ItemName": "Car",
+        "Amount": 500
+      }
+    ]
+  }
+]

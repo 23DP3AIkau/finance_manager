@@ -26,8 +26,7 @@ namespace PersonalFinanceManager
 
     class Program
     {
-        // Pagaidam izmantoju debug caur bin folder
-        static string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\data\\accounts.json");
+        static string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data\\accounts.json");
         static List<Account> accounts = new List<Account>();
         static Account currentAccount;
 
@@ -280,7 +279,7 @@ namespace PersonalFinanceManager
         static void DisplayBudget(string category, decimal budget)
         {
             Console.WriteLine($"\nBudget for {category} set to {budget:C}");
-            // Papildu funkcionalitāti – šeit var pievienot budžeta saglabāšanu konta datos
+            // Papildu funkcionalitāti – pievienot budžeta saglabāšanu konta datos
         }
     }
 }
