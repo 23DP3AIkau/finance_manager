@@ -110,25 +110,34 @@ namespace PersonalFinanceManager
 
         static void LoadAccounts()
         {
-            if (File.Exists(filePath))
+            string directoryPath = Path.GetDirectoryName(filePath);
+
+            // Ensure the directory exists
+            if (!Directory.Exists(directoryPath))
             {
-                string json = File.ReadAllText(filePath);
-                try
-                {
-                    accounts = JsonSerializer.Deserialize<List<Account>>(json);
-                    if (accounts == null)
-                    {
-                        accounts = new List<Account>();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error reading accounts file: " + ex.Message);
-                    accounts = new List<Account>();
-                }
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            // Ensure the file exists
+            if (!File.Exists(filePath))
+            {
+                File.WriteAllText(filePath, "[]"); // Create an empty JSON array
+            }
+
+            // Read and deserialize the JSON file
+            string json = File.ReadAllText(filePath);
+            try
+            {
+                accounts = JsonSerializer.Deserialize<List<Account>>(json) ?? new List<Account>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error reading accounts file: " + ex.Message);
+                accounts = new List<Account>();
             }
         }
 
+            
         static void SaveAccounts()
         {
             var options = new JsonSerializerOptions { WriteIndented = true };
@@ -206,7 +215,7 @@ namespace PersonalFinanceManager
 
             decimal totalIncome = 0;
             decimal totalExpenses = 0;
-
+               
             foreach (var income in currentAccount.Incomes)
             {
                 totalIncome += income;

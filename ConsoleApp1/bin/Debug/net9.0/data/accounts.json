@@ -1,18 +1,29 @@
 [
   {
     "AccountName": "Alans",
-    "Incomes": [],
-    "Expenses": []
+    "Incomes": [
+      100000
+    ],
+    "Expenses": [
+      {
+        "ItemName": "McLaren",
+        "Amount": 100000
+      },
+      {
+        "ItemName": "Food",
+        "Amount": 100
+      }
+    ]
   },
   {
     "AccountName": "Ivans",
     "Incomes": [
-      1000
+      100
     ],
     "Expenses": [
       {
-        "ItemName": "Car",
-        "Amount": 500
+        "ItemName": "Food",
+        "Amount": 50
       }
     ]
   }

@@ -1,0 +1,5 @@
+C:\Users\alans\OneDrive\Desktop\app\ConsoleApp1.exe
+C:\Users\alans\OneDrive\Desktop\app\ConsoleApp1.dll
+C:\Users\alans\OneDrive\Desktop\app\ConsoleApp1.deps.json
+C:\Users\alans\OneDrive\Desktop\app\ConsoleApp1.runtimeconfig.json
+C:\Users\alans\OneDrive\Desktop\app\ConsoleApp1.pdb
