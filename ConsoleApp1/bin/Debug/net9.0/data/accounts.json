@@ -2,7 +2,8 @@
   {
     "AccountName": "Alans",
     "Incomes": [
-      100000
+      100000,
+      1000
     ],
     "Expenses": [
       {
@@ -18,12 +19,17 @@
   {
     "AccountName": "Ivans",
     "Incomes": [
-      100
+      100,
+      1000
     ],
     "Expenses": [
       {
         "ItemName": "Food",
         "Amount": 50
+      },
+      {
+        "ItemName": "Dildo",
+        "Amount": 35
       }
     ]
   }

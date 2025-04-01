@@ -21,7 +21,7 @@ namespace PersonalFinanceManager
         {
             Incomes = new List<decimal>();
             Expenses = new List<Expense>();
-        }
+        }   
     }
 
     class Program
@@ -78,7 +78,8 @@ namespace PersonalFinanceManager
                 Console.WriteLine("2. Add Expense");
                 Console.WriteLine("3. Calculate Totals");
                 Console.WriteLine("4. Set Budgets");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Show Total Expenses");
+                Console.WriteLine("6. Exit");
                 Console.WriteLine("===========================");
 
                 Console.Write("\nEnter your choice: ");
@@ -99,6 +100,9 @@ namespace PersonalFinanceManager
                         SetBudgets();
                         break;
                     case "5":
+                        ShowTotalExpenses(); 
+                        break;
+                    case "6":
                         Console.WriteLine("\nThank you for using Personal Finance Manager. Goodbye!");
                         return;
                     default:
@@ -161,7 +165,7 @@ namespace PersonalFinanceManager
             Console.WriteLine("Add Income");
             Console.WriteLine("===========================");
 
-            Console.Write("Enter the income amount: ");
+            Console.Write("Enter the income amount: $");
             if (decimal.TryParse(Console.ReadLine(), out decimal income))
             {
                 currentAccount.Incomes.Add(income);
@@ -289,6 +293,46 @@ namespace PersonalFinanceManager
         {
             Console.WriteLine($"\nBudget for {category} set to {budget:C}");
             // Papildu funkcionalitāti – pievienot budžeta saglabāšanu konta datos
+        }
+
+        static void ShowTotalExpenses()
+        {
+            Console.WriteLine("Filter expenses by:");
+            Console.WriteLine("1. No filter");
+            Console.WriteLine("2. By amount range");
+            Console.WriteLine("3. By item name");
+            string filterChoice = Console.ReadLine();
+
+            IEnumerable<Expense> filteredExpenses = currentAccount.Expenses;
+
+            if (filterChoice == "2")
+            {
+                Console.Write("Enter minimum amount: ");
+                decimal min = decimal.Parse(Console.ReadLine());
+                Console.Write("Enter maximum amount: ");
+                decimal max = decimal.Parse(Console.ReadLine());
+                filteredExpenses = filteredExpenses.Where(e => e.Amount >= min && e.Amount <= max);
+            }
+            else if (filterChoice == "3")
+            {
+                Console.Write("Enter item name to search: ");
+                string name = Console.ReadLine().ToLower();
+                filteredExpenses = filteredExpenses.Where(e => e.ItemName.ToLower().Contains(name));
+            }
+
+            Console.WriteLine("Sort by:");
+            Console.WriteLine("1. Name");
+            Console.WriteLine("2. Amount");
+            string sortChoice = Console.ReadLine();
+
+            if (sortChoice == "1")
+                filteredExpenses = filteredExpenses.OrderBy(e => e.ItemName);
+            else if (sortChoice == "2")
+                filteredExpenses = filteredExpenses.OrderBy(e => e.Amount);
+
+            Console.WriteLine("\nExpenses:");
+            foreach (var expense in filteredExpenses)
+                Console.WriteLine($"{expense.ItemName}: {expense.Amount:C}");
         }
     }
 }
