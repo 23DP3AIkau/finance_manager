@@ -13,4 +13,4 @@ namespace PersonalFinanceManager
             Application.Run(new Form1());
         }
     }
-}
+}   
