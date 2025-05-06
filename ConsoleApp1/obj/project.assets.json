@@ -1,43 +1,43 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0-windows7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\alans\\.nuget\\packages\\": {},
+    "C:\\Users\\Alans\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alans\\OneDrive\\Documents\\finance_manager\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Alans\\Documents\\GitHub\\finance_manager\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\alans\\OneDrive\\Documents\\finance_manager\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\alans\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alans\\OneDrive\\Documents\\finance_manager\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\Alans\\Documents\\GitHub\\finance_manager\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\Alans\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alans\\Documents\\GitHub\\finance_manager\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\alans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alans\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net9.0"
+        "net9.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
           "projectReferences": {}
         }
       },
@@ -51,11 +51,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net9.0": {
-        "targetAlias": "net9.0",
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -70,9 +70,12 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300-preview.0.25177.5/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

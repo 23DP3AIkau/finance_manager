@@ -1,0 +1,17 @@
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\PersonalFinanceManager.Form1.resources
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.csproj.GenerateResource.cache
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.sourcelink.json
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\bin\Debug\net9.0-windows\ConsoleApp1.exe
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\bin\Debug\net9.0-windows\ConsoleApp1.deps.json
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\bin\Debug\net9.0-windows\ConsoleApp1.runtimeconfig.json
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\bin\Debug\net9.0-windows\ConsoleApp1.dll
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\bin\Debug\net9.0-windows\ConsoleApp1.pdb
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.dll
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\refint\ConsoleApp1.dll
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.pdb
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ConsoleApp1.genruntimeconfig.cache
+C:\Users\Alans\Documents\GitHub\finance_manager\ConsoleApp1\obj\Debug\net9.0-windows\ref\ConsoleApp1.dll
