@@ -1,19 +1,5813 @@
 [
   {
-    "AccountName": "Alans",
+    "AccountName": "Test Account",
     "Incomes": [
-      123121543242
+      {
+        "Amount": 4080.88,
+        "Category": "Passive Income",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 2467.38,
+        "Category": "Passive Income",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 2543.49,
+        "Category": "Active Income",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 2937.57,
+        "Category": "Passive Income",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 3856.79,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 3609.43,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 3706.60,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 2010.20,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 2468.12,
+        "Category": "Active Income",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 3954.45,
+        "Category": "Passive Income",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 2221.42,
+        "Category": "Active Income",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 2473.53,
+        "Category": "Passive Income",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 2767.90,
+        "Category": "Portfolio Income",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 2686.21,
+        "Category": "Active Income",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 3362.91,
+        "Category": "Active Income",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 3826.29,
+        "Category": "Portfolio Income",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 4147.65,
+        "Category": "Passive Income",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 3332.20,
+        "Category": "Portfolio Income",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 3094.62,
+        "Category": "Active Income",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 2413.57,
+        "Category": "Portfolio Income",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 4477.42,
+        "Category": "Portfolio Income",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 2384.30,
+        "Category": "Portfolio Income",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 2568.57,
+        "Category": "Passive Income",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 2731.52,
+        "Category": "Passive Income",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 3541.39,
+        "Category": "Active Income",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 4447.12,
+        "Category": "Active Income",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 1514.17,
+        "Category": "Passive Income",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 4330.19,
+        "Category": "Passive Income",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 3698.78,
+        "Category": "Portfolio Income",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 2153.03,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 4394.62,
+        "Category": "Active Income",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 3635.44,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 4294.03,
+        "Category": "Active Income",
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Amount": 1848.97,
+        "Category": "Active Income",
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Amount": 1991.57,
+        "Category": "Active Income",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 2935.79,
+        "Category": "Passive Income",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 3368.58,
+        "Category": "Active Income",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 3094.30,
+        "Category": "Portfolio Income",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 4007.58,
+        "Category": "Passive Income",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 2599.12,
+        "Category": "Passive Income",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 3865.20,
+        "Category": "Portfolio Income",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 2490.86,
+        "Category": "Active Income",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 3693.25,
+        "Category": "Active Income",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 2791.43,
+        "Category": "Passive Income",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 3222.28,
+        "Category": "Passive Income",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 3601.64,
+        "Category": "Portfolio Income",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 3004.31,
+        "Category": "Portfolio Income",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 4169.75,
+        "Category": "Active Income",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 3297.97,
+        "Category": "Passive Income",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 3547.02,
+        "Category": "Portfolio Income",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 1879.40,
+        "Category": "Passive Income",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 4169.09,
+        "Category": "Portfolio Income",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 2669.00,
+        "Category": "Passive Income",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 3654.65,
+        "Category": "Portfolio Income",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 3597.05,
+        "Category": "Passive Income",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 2287.58,
+        "Category": "Passive Income",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 3308.03,
+        "Category": "Active Income",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 1693.04,
+        "Category": "Portfolio Income",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 1931.69,
+        "Category": "Active Income",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 3636.61,
+        "Category": "Portfolio Income",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 2406.60,
+        "Category": "Passive Income",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 2305.49,
+        "Category": "Portfolio Income",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 2558.01,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 1740.60,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 3407.06,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 3714.92,
+        "Category": "Portfolio Income",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 1891.23,
+        "Category": "Active Income",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 4274.51,
+        "Category": "Active Income",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 3107.32,
+        "Category": "Passive Income",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 2155.55,
+        "Category": "Passive Income",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 4049.15,
+        "Category": "Passive Income",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 2876.55,
+        "Category": "Portfolio Income",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 2106.00,
+        "Category": "Passive Income",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 2656.34,
+        "Category": "Portfolio Income",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 2844.64,
+        "Category": "Passive Income",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 3947.48,
+        "Category": "Portfolio Income",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 2954.29,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 2309.09,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 2893.60,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 1951.19,
+        "Category": "Active Income",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 4481.38,
+        "Category": "Portfolio Income",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 1732.12,
+        "Category": "Active Income",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 3207.84,
+        "Category": "Portfolio Income",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 1651.03,
+        "Category": "Active Income",
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Amount": 3122.02,
+        "Category": "Portfolio Income",
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Amount": 2126.23,
+        "Category": "Passive Income",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 3490.26,
+        "Category": "Portfolio Income",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 2479.99,
+        "Category": "Passive Income",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 2347.26,
+        "Category": "Passive Income",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 1574.16,
+        "Category": "Passive Income",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 3367.62,
+        "Category": "Passive Income",
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Amount": 1856.74,
+        "Category": "Active Income",
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Amount": 4209.73,
+        "Category": "Active Income",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 2678.97,
+        "Category": "Portfolio Income",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 3909.34,
+        "Category": "Portfolio Income",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 2238.32,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 4190.33,
+        "Category": "Active Income",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 3445.27,
+        "Category": "Portfolio Income",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 4308.84,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 2760.02,
+        "Category": "Active Income",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 2587.78,
+        "Category": "Portfolio Income",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 4305.03,
+        "Category": "Passive Income",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 2908.68,
+        "Category": "Passive Income",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 3754.41,
+        "Category": "Passive Income",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 2683.75,
+        "Category": "Portfolio Income",
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Amount": 3655.73,
+        "Category": "Passive Income",
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Amount": 2885.99,
+        "Category": "Portfolio Income",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 2165.48,
+        "Category": "Portfolio Income",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 4410.76,
+        "Category": "Passive Income",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 2785.13,
+        "Category": "Active Income",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 2370.11,
+        "Category": "Passive Income",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 2888.32,
+        "Category": "Portfolio Income",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 1643.95,
+        "Category": "Active Income",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 3989.47,
+        "Category": "Portfolio Income",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 4306.94,
+        "Category": "Passive Income",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 4332.37,
+        "Category": "Passive Income",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 1790.93,
+        "Category": "Active Income",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 4079.27,
+        "Category": "Active Income",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 3117.20,
+        "Category": "Passive Income",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 1846.95,
+        "Category": "Active Income",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 3307.00,
+        "Category": "Active Income",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 2177.77,
+        "Category": "Portfolio Income",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 3867.90,
+        "Category": "Passive Income",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 4122.79,
+        "Category": "Passive Income",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 3387.76,
+        "Category": "Active Income",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 2855.73,
+        "Category": "Active Income",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 2567.43,
+        "Category": "Passive Income",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 4026.07,
+        "Category": "Portfolio Income",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 2252.96,
+        "Category": "Active Income",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 4382.58,
+        "Category": "Portfolio Income",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 3639.54,
+        "Category": "Active Income",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 3828.82,
+        "Category": "Passive Income",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 2190.01,
+        "Category": "Portfolio Income",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 2051.50,
+        "Category": "Portfolio Income",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 3400.51,
+        "Category": "Active Income",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 4477.60,
+        "Category": "Active Income",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 3768.07,
+        "Category": "Active Income",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 2543.21,
+        "Category": "Active Income",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 3545.11,
+        "Category": "Active Income",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 2518.02,
+        "Category": "Active Income",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 3464.17,
+        "Category": "Active Income",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 4047.38,
+        "Category": "Active Income",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 2416.50,
+        "Category": "Active Income",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 2181.77,
+        "Category": "Portfolio Income",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 4443.45,
+        "Category": "Portfolio Income",
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Amount": 4464.30,
+        "Category": "Active Income",
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Amount": 3970.63,
+        "Category": "Passive Income",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 3548.76,
+        "Category": "Passive Income",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 3881.64,
+        "Category": "Passive Income",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 1605.73,
+        "Category": "Portfolio Income",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 3293.48,
+        "Category": "Active Income",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 1940.94,
+        "Category": "Active Income",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 2479.41,
+        "Category": "Portfolio Income",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 3853.13,
+        "Category": "Portfolio Income",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 4286.81,
+        "Category": "Portfolio Income",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 4216.40,
+        "Category": "Passive Income",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 2802.65,
+        "Category": "Portfolio Income",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 3898.13,
+        "Category": "Portfolio Income",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 3077.55,
+        "Category": "Passive Income",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 2800.32,
+        "Category": "Active Income",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 3255.42,
+        "Category": "Portfolio Income",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 1836.66,
+        "Category": "Portfolio Income",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 2359.38,
+        "Category": "Portfolio Income",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 2619.52,
+        "Category": "Passive Income",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 3748.71,
+        "Category": "Passive Income",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 2572.81,
+        "Category": "Active Income",
+        "Month": 12,
+        "Year": 2027
+      }
     ],
     "Expenses": [
       {
-        "ItemName": "Mclaren Senna GTR",
-        "Amount": 20000000
+        "Amount": 253.74,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 384.68,
+        "Category": "Groceries",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 224.72,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 190.77,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 189.25,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 280.62,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Amount": 140.02,
+        "Category": "Housing",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 440.17,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 531.89,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 164.64,
+        "Category": "Lifestyle",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 110.31,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 435.78,
+        "Category": "Housing",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 251.46,
+        "Category": "Housing",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 119.51,
+        "Category": "Health Care",
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Amount": 444.38,
+        "Category": "Utilities",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 115.74,
+        "Category": "Health Care",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 68.23,
+        "Category": "Health Care",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 541.45,
+        "Category": "Housing",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 251.65,
+        "Category": "Housing",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 203.21,
+        "Category": "Lifestyle",
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Amount": 527.18,
+        "Category": "Housing",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 397.78,
+        "Category": "Lifestyle",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 370.05,
+        "Category": "Lifestyle",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 174.57,
+        "Category": "Transportation",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 478.17,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 497.72,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 276.42,
+        "Category": "Transportation",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 152.35,
+        "Category": "Transportation",
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Amount": 162.50,
+        "Category": "Lifestyle",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 479.39,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 321.47,
+        "Category": "Lifestyle",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 185.15,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 463.53,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 56.04,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 469.87,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 322.38,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 207.99,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 496.79,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Amount": 166.54,
+        "Category": "Groceries",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 247.84,
+        "Category": "Housing",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 490.41,
+        "Category": "Health Care",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 491.23,
+        "Category": "Lifestyle",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 477.55,
+        "Category": "Health Care",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 240.36,
+        "Category": "Housing",
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Amount": 407.34,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 532.14,
+        "Category": "Transportation",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 51.93,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 367.39,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 66.37,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 72.89,
+        "Category": "Utilities",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 395.70,
+        "Category": "Housing",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 174.45,
+        "Category": "Lifestyle",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 530.89,
+        "Category": "Utilities",
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Amount": 93.46,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 134.01,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 50.74,
+        "Category": "Groceries",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 180.57,
+        "Category": "Housing",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 274.59,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 300.91,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 397.65,
+        "Category": "Health Care",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 274.19,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 94.02,
+        "Category": "Utilities",
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Amount": 295.91,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 396.00,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 304.04,
+        "Category": "Transportation",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 135.80,
+        "Category": "Transportation",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 82.72,
+        "Category": "Transportation",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 497.15,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 149.87,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Amount": 193.30,
+        "Category": "Groceries",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 478.23,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 266.50,
+        "Category": "Groceries",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 350.17,
+        "Category": "Transportation",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 504.97,
+        "Category": "Transportation",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 310.26,
+        "Category": "Housing",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 98.89,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 171.15,
+        "Category": "Transportation",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 133.26,
+        "Category": "Housing",
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Amount": 293.83,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Amount": 521.71,
+        "Category": "Groceries",
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Amount": 136.63,
+        "Category": "Housing",
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Amount": 247.52,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Amount": 441.85,
+        "Category": "Transportation",
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Amount": 376.86,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 500.52,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 129.67,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 437.94,
+        "Category": "Health Care",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 367.97,
+        "Category": "Utilities",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 496.70,
+        "Category": "Housing",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 147.81,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 329.28,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 104.27,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 97.00,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Amount": 523.91,
+        "Category": "Groceries",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 129.25,
+        "Category": "Health Care",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 346.59,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 467.21,
+        "Category": "Health Care",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 296.70,
+        "Category": "Housing",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 75.29,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 529.73,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 200.70,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 290.64,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Amount": 474.57,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 496.65,
+        "Category": "Groceries",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 261.14,
+        "Category": "Utilities",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 276.37,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 222.13,
+        "Category": "Utilities",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 107.92,
+        "Category": "Health Care",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 322.58,
+        "Category": "Health Care",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 429.62,
+        "Category": "Lifestyle",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 473.14,
+        "Category": "Groceries",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 248.12,
+        "Category": "Groceries",
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Amount": 61.72,
+        "Category": "Lifestyle",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 544.72,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 151.37,
+        "Category": "Housing",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 465.40,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 95.32,
+        "Category": "Health Care",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 319.02,
+        "Category": "Utilities",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 383.18,
+        "Category": "Utilities",
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Amount": 413.08,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 419.82,
+        "Category": "Transportation",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 136.44,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 322.44,
+        "Category": "Housing",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 455.07,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Amount": 225.17,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 100.72,
+        "Category": "Utilities",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 466.41,
+        "Category": "Groceries",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 146.99,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 373.17,
+        "Category": "Housing",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 246.73,
+        "Category": "Housing",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 418.87,
+        "Category": "Groceries",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 253.70,
+        "Category": "Housing",
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Amount": 252.04,
+        "Category": "Health Care",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 436.10,
+        "Category": "Housing",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 304.52,
+        "Category": "Groceries",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 454.59,
+        "Category": "Health Care",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 478.36,
+        "Category": "Transportation",
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Amount": 295.83,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 354.20,
+        "Category": "Housing",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 251.32,
+        "Category": "Transportation",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 229.68,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 404.74,
+        "Category": "Lifestyle",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 403.80,
+        "Category": "Lifestyle",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 242.30,
+        "Category": "Transportation",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 450.73,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 466.65,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Amount": 296.60,
+        "Category": "Health Care",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 247.76,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 464.21,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 80.34,
+        "Category": "Groceries",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 274.81,
+        "Category": "Utilities",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 102.24,
+        "Category": "Housing",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 493.39,
+        "Category": "Health Care",
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Amount": 60.79,
+        "Category": "Transportation",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 410.39,
+        "Category": "Housing",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 223.46,
+        "Category": "Lifestyle",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 508.26,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 140.63,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 419.31,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 529.02,
+        "Category": "Groceries",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 393.16,
+        "Category": "Groceries",
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Amount": 209.67,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 346.45,
+        "Category": "Housing",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 83.39,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 218.51,
+        "Category": "Groceries",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 341.40,
+        "Category": "Transportation",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 68.90,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 435.06,
+        "Category": "Lifestyle",
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Amount": 326.04,
+        "Category": "Health Care",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 433.31,
+        "Category": "Groceries",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 539.22,
+        "Category": "Health Care",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 407.96,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 524.85,
+        "Category": "Transportation",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 331.36,
+        "Category": "Groceries",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 190.88,
+        "Category": "Health Care",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 400.47,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 203.18,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 118.44,
+        "Category": "Health Care",
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Amount": 294.04,
+        "Category": "Health Care",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 183.59,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 302.83,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 425.94,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 206.88,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Amount": 344.81,
+        "Category": "Utilities",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 250.57,
+        "Category": "Health Care",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 53.39,
+        "Category": "Housing",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 483.46,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 463.36,
+        "Category": "Housing",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 412.82,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 103.80,
+        "Category": "Utilities",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 305.64,
+        "Category": "Groceries",
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Amount": 535.89,
+        "Category": "Lifestyle",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 99.37,
+        "Category": "Utilities",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 55.81,
+        "Category": "Utilities",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 62.36,
+        "Category": "Housing",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 118.45,
+        "Category": "Lifestyle",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 362.63,
+        "Category": "Housing",
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Amount": 330.55,
+        "Category": "Lifestyle",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 98.39,
+        "Category": "Lifestyle",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 232.63,
+        "Category": "Utilities",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 198.59,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 268.57,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 218.25,
+        "Category": "Health Care",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 152.66,
+        "Category": "Transportation",
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Amount": 248.33,
+        "Category": "Lifestyle",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 162.00,
+        "Category": "Housing",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 154.27,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 460.29,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 55.32,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 222.33,
+        "Category": "Housing",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 415.14,
+        "Category": "Lifestyle",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 205.98,
+        "Category": "Lifestyle",
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Amount": 339.17,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Amount": 232.01,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Amount": 428.08,
+        "Category": "Lifestyle",
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Amount": 417.64,
+        "Category": "Utilities",
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Amount": 79.24,
+        "Category": "Housing",
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Amount": 202.69,
+        "Category": "Lifestyle",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 520.22,
+        "Category": "Transportation",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 140.05,
+        "Category": "Transportation",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 281.32,
+        "Category": "Transportation",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 463.00,
+        "Category": "Groceries",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 282.19,
+        "Category": "Housing",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 143.84,
+        "Category": "Housing",
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Amount": 289.58,
+        "Category": "Lifestyle",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 413.95,
+        "Category": "Housing",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 513.53,
+        "Category": "Transportation",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 259.70,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 522.48,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 506.25,
+        "Category": "Transportation",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 80.45,
+        "Category": "Lifestyle",
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Amount": 481.08,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Amount": 243.24,
+        "Category": "Health Care",
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Amount": 266.80,
+        "Category": "Housing",
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Amount": 92.41,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Amount": 89.94,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Amount": 154.77,
+        "Category": "Groceries",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 464.37,
+        "Category": "Lifestyle",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 70.39,
+        "Category": "Lifestyle",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 432.98,
+        "Category": "Groceries",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 385.40,
+        "Category": "Housing",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 73.36,
+        "Category": "Utilities",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 355.98,
+        "Category": "Lifestyle",
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Amount": 457.58,
+        "Category": "Utilities",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 251.69,
+        "Category": "Housing",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 238.21,
+        "Category": "Utilities",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 443.45,
+        "Category": "Groceries",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 399.60,
+        "Category": "Groceries",
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Amount": 485.52,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 282.08,
+        "Category": "Health Care",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 233.94,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 463.30,
+        "Category": "Housing",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 228.12,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 216.07,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 254.83,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 137.17,
+        "Category": "Transportation",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 234.55,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Amount": 458.53,
+        "Category": "Housing",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 435.50,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 524.22,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 140.44,
+        "Category": "Health Care",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 374.20,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 145.37,
+        "Category": "Housing",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 491.82,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 413.90,
+        "Category": "Health Care",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 391.79,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Amount": 400.51,
+        "Category": "Groceries",
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Amount": 243.49,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Amount": 548.18,
+        "Category": "Groceries",
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Amount": 387.29,
+        "Category": "Housing",
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Amount": 204.95,
+        "Category": "Utilities",
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Amount": 545.07,
+        "Category": "Lifestyle",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 439.80,
+        "Category": "Housing",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 384.08,
+        "Category": "Housing",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 272.51,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 525.55,
+        "Category": "Groceries",
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Amount": 411.55,
+        "Category": "Lifestyle",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 114.94,
+        "Category": "Utilities",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 487.48,
+        "Category": "Lifestyle",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 195.80,
+        "Category": "Housing",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 264.42,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 503.52,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 175.94,
+        "Category": "Utilities",
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Amount": 201.28,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 172.40,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 161.65,
+        "Category": "Health Care",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 391.81,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 261.74,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 93.81,
+        "Category": "Housing",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 54.50,
+        "Category": "Health Care",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 244.61,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Amount": 197.62,
+        "Category": "Utilities",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 244.54,
+        "Category": "Utilities",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 117.63,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 424.77,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 504.89,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 544.89,
+        "Category": "Groceries",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 493.41,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 227.21,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Amount": 256.55,
+        "Category": "Groceries",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 268.60,
+        "Category": "Transportation",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 346.08,
+        "Category": "Housing",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 387.93,
+        "Category": "Lifestyle",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 83.24,
+        "Category": "Transportation",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 93.65,
+        "Category": "Health Care",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 289.80,
+        "Category": "Housing",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 377.57,
+        "Category": "Groceries",
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Amount": 224.55,
+        "Category": "Lifestyle",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 206.12,
+        "Category": "Utilities",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 68.80,
+        "Category": "Utilities",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 89.49,
+        "Category": "Lifestyle",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 494.87,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 116.82,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Amount": 443.97,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 502.22,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 464.45,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 241.16,
+        "Category": "Housing",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 352.58,
+        "Category": "Utilities",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 272.25,
+        "Category": "Groceries",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 69.13,
+        "Category": "Utilities",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 529.30,
+        "Category": "Utilities",
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Amount": 139.90,
+        "Category": "Lifestyle",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 213.54,
+        "Category": "Health Care",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 159.06,
+        "Category": "Transportation",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 395.64,
+        "Category": "Housing",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 137.96,
+        "Category": "Lifestyle",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 274.40,
+        "Category": "Groceries",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 198.22,
+        "Category": "Housing",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 384.42,
+        "Category": "Health Care",
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Amount": 66.66,
+        "Category": "Groceries",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 461.63,
+        "Category": "Lifestyle",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 445.27,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 542.60,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 356.01,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 126.26,
+        "Category": "Transportation",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 400.63,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 354.20,
+        "Category": "Housing",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 234.91,
+        "Category": "Lifestyle",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 192.04,
+        "Category": "Lifestyle",
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Amount": 393.03,
+        "Category": "Groceries",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 363.70,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 499.56,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 544.25,
+        "Category": "Transportation",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 414.57,
+        "Category": "Housing",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 508.84,
+        "Category": "Groceries",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 468.18,
+        "Category": "Housing",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 303.12,
+        "Category": "Transportation",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 513.15,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 377.20,
+        "Category": "Health Care",
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Amount": 239.51,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 261.80,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 486.75,
+        "Category": "Housing",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 448.76,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 152.95,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 377.87,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Amount": 476.17,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 357.36,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 150.75,
+        "Category": "Utilities",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 256.16,
+        "Category": "Lifestyle",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 154.14,
+        "Category": "Transportation",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 100.77,
+        "Category": "Utilities",
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Amount": 509.57,
+        "Category": "Utilities",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 238.43,
+        "Category": "Utilities",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 221.37,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 462.97,
+        "Category": "Groceries",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 120.72,
+        "Category": "Transportation",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 537.54,
+        "Category": "Lifestyle",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 509.99,
+        "Category": "Health Care",
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Amount": 214.70,
+        "Category": "Transportation",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 176.46,
+        "Category": "Transportation",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 447.24,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 169.39,
+        "Category": "Housing",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 243.25,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 294.89,
+        "Category": "Transportation",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 490.62,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 246.11,
+        "Category": "Housing",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 214.77,
+        "Category": "Groceries",
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Amount": 315.43,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 368.53,
+        "Category": "Utilities",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 50.25,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 140.41,
+        "Category": "Health Care",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 390.00,
+        "Category": "Transportation",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 522.09,
+        "Category": "Health Care",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 51.81,
+        "Category": "Transportation",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 491.90,
+        "Category": "Health Care",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 290.05,
+        "Category": "Groceries",
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Amount": 490.91,
+        "Category": "Housing",
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Amount": 236.37,
+        "Category": "Transportation",
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Amount": 230.00,
+        "Category": "Health Care",
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Amount": 188.20,
+        "Category": "Lifestyle",
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Amount": 360.34,
+        "Category": "Lifestyle",
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Amount": 416.10,
+        "Category": "Transportation",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 151.28,
+        "Category": "Groceries",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 471.16,
+        "Category": "Lifestyle",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 501.10,
+        "Category": "Utilities",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 211.10,
+        "Category": "Utilities",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 510.14,
+        "Category": "Lifestyle",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 219.85,
+        "Category": "Groceries",
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Amount": 540.17,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 452.61,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 371.17,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 461.37,
+        "Category": "Health Care",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 292.10,
+        "Category": "Housing",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 371.90,
+        "Category": "Transportation",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 410.55,
+        "Category": "Groceries",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 147.72,
+        "Category": "Housing",
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Amount": 370.58,
+        "Category": "Groceries",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 99.94,
+        "Category": "Groceries",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 403.41,
+        "Category": "Transportation",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 528.53,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 130.75,
+        "Category": "Lifestyle",
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Amount": 534.23,
+        "Category": "Health Care",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 312.82,
+        "Category": "Health Care",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 478.02,
+        "Category": "Lifestyle",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 331.42,
+        "Category": "Health Care",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 92.87,
+        "Category": "Health Care",
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Amount": 535.61,
+        "Category": "Lifestyle",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 352.85,
+        "Category": "Lifestyle",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 480.63,
+        "Category": "Lifestyle",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 259.07,
+        "Category": "Health Care",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 295.84,
+        "Category": "Utilities",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 310.29,
+        "Category": "Transportation",
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Amount": 523.09,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 219.33,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 424.08,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 351.57,
+        "Category": "Utilities",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 93.53,
+        "Category": "Transportation",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 407.73,
+        "Category": "Lifestyle",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 188.12,
+        "Category": "Groceries",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 425.23,
+        "Category": "Groceries",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 205.77,
+        "Category": "Transportation",
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Amount": 524.17,
+        "Category": "Health Care",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 456.80,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 334.78,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 544.16,
+        "Category": "Health Care",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 293.70,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 234.74,
+        "Category": "Housing",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 534.36,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 404.05,
+        "Category": "Transportation",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 306.88,
+        "Category": "Lifestyle",
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Amount": 266.46,
+        "Category": "Groceries",
+        "Month": 12,
+        "Year": 2027
+      }
+    ],
+    "Budgets": [
+      {
+        "Category": "Utilities",
+        "Amount": 663.62,
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 760.53,
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 329.39,
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 762.79,
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 617.53,
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 708.87,
+        "Month": 1,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 942.83,
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 395.99,
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 871.33,
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 870.06,
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 691.79,
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 375.93,
+        "Month": 2,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 605.23,
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 357.85,
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 756.17,
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 763.61,
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 564.90,
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 342.18,
+        "Month": 3,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 586.34,
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 849.27,
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 745.50,
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 747.24,
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 324.78,
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 607.68,
+        "Month": 4,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 630.41,
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 239.33,
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 286.45,
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 484.77,
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 632.69,
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 606.82,
+        "Month": 5,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 693.00,
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 326.03,
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 773.51,
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 641.62,
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 270.26,
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 376.14,
+        "Month": 6,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 559.45,
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 516.33,
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 390.26,
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 456.82,
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 520.99,
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 309.61,
+        "Month": 7,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 946.21,
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 720.33,
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 773.22,
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 949.92,
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 843.42,
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 422.02,
+        "Month": 8,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 923.28,
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 608.76,
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 312.62,
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 800.37,
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 479.73,
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 347.93,
+        "Month": 9,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 949.32,
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 863.33,
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 739.65,
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 267.26,
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 863.18,
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 291.80,
+        "Month": 10,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 412.84,
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 700.13,
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 936.73,
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 655.82,
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 511.92,
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 540.66,
+        "Month": 11,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 576.74,
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 404.92,
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Category": "Housing",
+        "Amount": 328.92,
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 871.88,
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 320.49,
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 842.04,
+        "Month": 12,
+        "Year": 2023
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 809.54,
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 368.06,
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 855.69,
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 582.53,
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 472.05,
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 464.97,
+        "Month": 1,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 842.54,
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 377.22,
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 427.09,
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 404.16,
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 332.16,
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 405.69,
+        "Month": 2,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 685.89,
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 549.63,
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 563.94,
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 427.52,
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 475.19,
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 401.60,
+        "Month": 3,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 287.94,
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 767.33,
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 982.10,
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 990.72,
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 586.14,
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 806.04,
+        "Month": 4,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 921.53,
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 708.53,
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 998.21,
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 481.46,
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 477.71,
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 347.40,
+        "Month": 5,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 360.72,
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 503.95,
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 717.78,
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 546.76,
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 866.14,
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 779.84,
+        "Month": 6,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 667.94,
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 975.07,
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 540.52,
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 698.59,
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 739.57,
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 347.64,
+        "Month": 7,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 897.32,
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 664.53,
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 215.66,
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 527.28,
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 875.64,
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 762.37,
+        "Month": 8,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 528.19,
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 321.53,
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 340.21,
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 556.63,
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 675.68,
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 446.93,
+        "Month": 9,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 931.65,
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 956.94,
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 833.71,
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 294.02,
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 695.80,
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 801.52,
+        "Month": 10,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 825.60,
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 550.27,
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 480.74,
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 611.82,
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 419.57,
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 693.31,
+        "Month": 11,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 508.77,
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 944.02,
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Category": "Housing",
+        "Amount": 973.14,
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 342.20,
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 689.05,
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 252.16,
+        "Month": 12,
+        "Year": 2024
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 956.66,
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 865.75,
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 581.88,
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 547.70,
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 900.65,
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 519.70,
+        "Month": 1,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 732.90,
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 616.06,
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 439.38,
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 619.10,
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 645.53,
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 442.03,
+        "Month": 2,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 427.51,
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 554.57,
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 245.00,
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 775.78,
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 849.51,
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 756.84,
+        "Month": 3,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 381.90,
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 714.48,
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 673.47,
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 368.89,
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 778.74,
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 982.90,
+        "Month": 4,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 594.78,
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 681.31,
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 483.27,
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 595.91,
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 977.28,
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 658.64,
+        "Month": 5,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 658.25,
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 462.08,
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 996.97,
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 269.19,
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 692.37,
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 481.83,
+        "Month": 6,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 903.45,
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 431.20,
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 238.28,
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 909.94,
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 721.38,
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 910.75,
+        "Month": 7,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 490.76,
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 243.38,
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 802.94,
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 530.27,
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 368.71,
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 651.69,
+        "Month": 8,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 496.82,
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 610.12,
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 334.53,
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 487.61,
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 452.31,
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 865.78,
+        "Month": 9,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 582.62,
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 419.67,
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 487.93,
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 873.51,
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 697.90,
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 751.22,
+        "Month": 10,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 355.22,
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 203.81,
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 561.60,
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 388.61,
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 761.39,
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 282.80,
+        "Month": 11,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 791.28,
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 248.53,
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Category": "Housing",
+        "Amount": 239.57,
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 790.18,
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 394.85,
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 307.48,
+        "Month": 12,
+        "Year": 2025
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 833.21,
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 413.31,
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 965.37,
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 699.61,
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 959.64,
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 374.36,
+        "Month": 1,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 614.33,
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 549.33,
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 417.30,
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 491.51,
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 271.96,
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 381.82,
+        "Month": 2,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 422.09,
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 687.26,
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 314.73,
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 997.23,
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 810.99,
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 213.73,
+        "Month": 3,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 622.87,
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 796.32,
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 238.92,
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 655.81,
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 294.08,
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 739.05,
+        "Month": 4,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 723.01,
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 357.74,
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 727.43,
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 227.40,
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 961.26,
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 879.99,
+        "Month": 5,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 812.06,
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 745.67,
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 296.23,
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 755.01,
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 887.08,
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 465.15,
+        "Month": 6,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 912.79,
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 345.39,
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 238.71,
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 873.37,
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 517.23,
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 790.61,
+        "Month": 7,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 729.73,
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 436.99,
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 540.94,
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 890.52,
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 625.22,
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 208.89,
+        "Month": 8,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 407.43,
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 936.02,
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 723.67,
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 908.42,
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 564.04,
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 557.40,
+        "Month": 9,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 408.72,
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 203.50,
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 594.51,
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 700.20,
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 521.54,
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 307.35,
+        "Month": 10,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 327.55,
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 496.93,
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 993.97,
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 355.70,
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 600.86,
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 775.48,
+        "Month": 11,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 261.83,
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 810.84,
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Category": "Housing",
+        "Amount": 566.08,
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 779.60,
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 907.58,
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 228.41,
+        "Month": 12,
+        "Year": 2026
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 550.44,
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 638.53,
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 509.92,
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 362.20,
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 698.66,
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 359.12,
+        "Month": 1,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 667.02,
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 831.00,
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 330.42,
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 690.70,
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 776.77,
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 976.93,
+        "Month": 2,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 694.05,
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 272.20,
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 990.98,
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 271.32,
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 418.58,
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 400.62,
+        "Month": 3,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 709.90,
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 797.25,
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 217.13,
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 374.83,
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 862.51,
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 646.31,
+        "Month": 4,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 271.33,
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 370.25,
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 890.76,
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 763.03,
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 215.80,
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 265.46,
+        "Month": 5,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 319.48,
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 234.57,
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 737.65,
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 417.62,
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 827.25,
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 404.84,
+        "Month": 6,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 547.37,
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 467.38,
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 953.38,
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 315.30,
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 849.81,
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 706.31,
+        "Month": 7,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 733.18,
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 767.56,
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 409.92,
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 388.54,
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 923.38,
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 351.56,
+        "Month": 8,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 545.66,
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 371.78,
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 999.03,
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 703.66,
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 342.26,
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 788.64,
+        "Month": 9,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 470.82,
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 459.60,
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 401.01,
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 316.99,
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 776.88,
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 311.09,
+        "Month": 10,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 451.09,
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 645.92,
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 818.71,
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 245.37,
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 665.07,
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 426.23,
+        "Month": 11,
+        "Year": 2027
+      },
+      {
+        "Category": "Utilities",
+        "Amount": 887.34,
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Category": "Groceries",
+        "Amount": 943.49,
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Category": "Housing",
+        "Amount": 276.26,
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Category": "Transportation",
+        "Amount": 392.91,
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Category": "Health Care",
+        "Amount": 337.66,
+        "Month": 12,
+        "Year": 2027
+      },
+      {
+        "Category": "Lifestyle",
+        "Amount": 356.59,
+        "Month": 12,
+        "Year": 2027
       }
     ]
-  },
-  {
-    "AccountName": "Laura",
-    "Incomes": [],
-    "Expenses": []
   }
 ]
