@@ -4,6 +4,6 @@
 **Tehnoloģijas:**
 
 - **Valoda:** C#
-- **UI:** Console
-- **Datu glabāšana:** CSV/JSON
+- **UI:** Windows Forms .NET9.0
+- **Datu glabāšana:** JSON
 - **Papildu:** Git
