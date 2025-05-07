@@ -1,0 +1,5 @@
+C:\Users\Alans\Documents\PublishedApps\FinanceManager\ConsoleApp1.exe
+C:\Users\Alans\Documents\PublishedApps\FinanceManager\ConsoleApp1.dll
+C:\Users\Alans\Documents\PublishedApps\FinanceManager\ConsoleApp1.deps.json
+C:\Users\Alans\Documents\PublishedApps\FinanceManager\ConsoleApp1.runtimeconfig.json
+C:\Users\Alans\Documents\PublishedApps\FinanceManager\ConsoleApp1.pdb

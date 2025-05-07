@@ -109,6 +109,7 @@ namespace PersonalFinanceManager
             accountList.Items.AddRange(accounts.Select(a => a.AccountName).ToArray());
             mainPanel.Controls.Add(accountList);
 
+            // Select Account Button
             var selectButton = new Button
             {
                 Text = "Select Account",
@@ -129,6 +130,7 @@ namespace PersonalFinanceManager
             };
             mainPanel.Controls.Add(selectButton);
 
+            // Create New Account Button
             var createButton = new Button
             {
                 Text = "Create New Account",
@@ -137,6 +139,68 @@ namespace PersonalFinanceManager
             };
             createButton.Click += (s, e) => ShowCreateAccountForm();
             mainPanel.Controls.Add(createButton);
+
+            // Create Test Account Button
+            var createTestButton = new Button
+            {
+                Text = "Create Test Account",
+                Location = new Point(20, 300),
+                Size = new Size(160, 30)
+            };
+            createTestButton.Click += (s, e) =>
+            {
+                accounts.Add(CreateTestAccount());
+                SaveAccounts();
+                ShowAccountSelection(); // Refresh the account list
+                MessageBox.Show("Test account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            };
+            mainPanel.Controls.Add(createTestButton);
+
+            // Delete Account Button
+            var deleteButton = new Button
+            {
+                Text = "Delete Account",
+                Location = new Point(190, 300),
+                Size = new Size(130, 30)
+            };
+            deleteButton.Click += (s, e) =>
+            {
+                if (accountList.SelectedIndex >= 0)
+                {
+                    var accountToDelete = accounts[accountList.SelectedIndex];
+
+                    if (MessageBox.Show($"Are you sure you want to delete account '{accountToDelete.AccountName}'?",
+                        "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    {
+                        accounts.RemoveAt(accountList.SelectedIndex);
+                        SaveAccounts();
+
+                        // Clear current account if it was the deleted one
+                        if (currentAccount != null && currentAccount.AccountName == accountToDelete.AccountName)
+                        {
+                            currentAccount = null;
+                        }
+
+                        ShowAccountSelection(); // Refresh the account list
+                        MessageBox.Show("Account deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please select an account to delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            };
+            mainPanel.Controls.Add(deleteButton);
+
+            // Exit Program Button
+            var exitButton = new Button
+            {
+                Text = "Exit Program",
+                Location = new Point(20, 340),
+                Size = new Size(300, 30)
+            };
+            exitButton.Click += (s, e) => this.Close();
+            mainPanel.Controls.Add(exitButton);
         }
 
         private void ShowCreateAccountForm()
@@ -1069,7 +1133,9 @@ namespace PersonalFinanceManager
             {
                 Dock = DockStyle.Fill,
                 AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
-                ReadOnly = true
+                ReadOnly = true,
+                AllowUserToAddRows = false, // Removes extra blank row
+                RowTemplate = { Height = 22 } // Taller rows (default is 20)
             };
             incomesGrid.Columns.Add("Category", "Category");
             incomesGrid.Columns.Add("Amount", "Amount");
@@ -1093,7 +1159,9 @@ namespace PersonalFinanceManager
             {
                 Dock = DockStyle.Fill,
                 AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
-                ReadOnly = true
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                RowTemplate = { Height = 22 }
             };
             expensesGrid.Columns.Add("Category", "Category");
             expensesGrid.Columns.Add("Amount", "Amount");
@@ -1117,7 +1185,9 @@ namespace PersonalFinanceManager
             {
                 Dock = DockStyle.Fill,
                 AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
-                ReadOnly = true
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                RowTemplate = { Height = 22 }
             };
             budgetsGrid.Columns.Add("Category", "Category");
             budgetsGrid.Columns.Add("Budget", "Budget");
@@ -1162,6 +1232,8 @@ namespace PersonalFinanceManager
                 new Font(budgetsGrid.Font, FontStyle.Bold);
         }
 
+        private DataGridView yearlyDataGridView; // Add this class field
+
         private void ShowYearlyOverview()
         {
             mainPanel.Controls.Clear();
@@ -1203,66 +1275,119 @@ namespace PersonalFinanceManager
             yearComboBox.SelectedItem = DateTime.Now.Year.ToString();
             mainPanel.Controls.Add(yearComboBox);
 
+            // Initialize the DataGridView only once
+            yearlyDataGridView = new DataGridView
+            {
+                Location = new Point(20, 130),
+                Size = new Size(700, 311),
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                ScrollBars = ScrollBars.Vertical
+            };
+            mainPanel.Controls.Add(yearlyDataGridView);
+
+            // Add columns (only once)
+            yearlyDataGridView.Columns.Clear();
+            yearlyDataGridView.Columns.Add("Month", "Month");
+            yearlyDataGridView.Columns.Add("Income", "Income");
+            yearlyDataGridView.Columns.Add("Expenses", "Expenses");
+            yearlyDataGridView.Columns.Add("Budget", "Budget");
+            yearlyDataGridView.Columns.Add("Difference", "Difference (Income - Expenses)");
+            yearlyDataGridView.Columns.Add("BudgetDiff", "Budget - Expenses");
+
+            // Total label
+            var totalLabel = new Label
+            {
+                Location = new Point(20, 450),
+                AutoSize = true,
+                Font = new Font(this.Font, FontStyle.Bold),
+                Name = "totalLabel"
+            };
+            mainPanel.Controls.Add(totalLabel);
+
             var showButton = new Button
             {
                 Text = "Show Overview",
                 Location = new Point(130, 90),
                 Size = new Size(120, 30)
             };
-            showButton.Click += (s, e) => UpdateYearlyOverview(int.Parse(yearComboBox.SelectedItem.ToString() ?? "0"));
+            showButton.Click += (s, e) =>
+            {
+                if (yearComboBox.SelectedIndex != -1)
+                {
+                    UpdateYearlyOverview(int.Parse(yearComboBox.SelectedItem.ToString()));
+                }
+            };
             mainPanel.Controls.Add(showButton);
 
-            UpdateYearlyOverview(DateTime.Now.Year);
+            // Show initial data
+            if (yearComboBox.SelectedIndex != -1)
+            {
+                UpdateYearlyOverview(int.Parse(yearComboBox.SelectedItem.ToString()));
+            }
         }
 
-        private void UpdateYearlyOverview(int year)
+        private void UpdateYearlyOverview(int selectedYear)
         {
-            // Clear previous overview controls
-            for (int i = mainPanel.Controls.Count - 1; i >= 0; i--)
-            {
-                if (mainPanel.Controls[i].Location.Y > 130)
-                {
-                    mainPanel.Controls.RemoveAt(i);
-                }
-            }
+            // Clear previous data
+            yearlyDataGridView.Rows.Clear();
 
-            var yearIncomes = currentAccount?.Incomes.Where(i => i.Year == year) ?? Enumerable.Empty<IncomeRecord>();
-            var yearExpenses = currentAccount?.Expenses.Where(e => e.Year == year) ?? Enumerable.Empty<Expense>();
-            var yearBudgets = currentAccount?.Budgets.Where(b => b.Year == year) ?? Enumerable.Empty<Budget>();
+            // Set DataGridView properties
+            yearlyDataGridView.AllowUserToAddRows = false;
+            yearlyDataGridView.RowTemplate.Height = 22;
 
-            // Monthly summaries
+            // Filter data by selected year
+            var yearIncomes = currentAccount?.Incomes
+                .Where(i => i.Year == selectedYear)
+                .ToList() ?? new List<IncomeRecord>();
+
+            var yearExpenses = currentAccount?.Expenses
+                .Where(e => e.Year == selectedYear)
+                .ToList() ?? new List<Expense>();
+
+            var yearBudgets = currentAccount?.Budgets
+                .Where(b => b.Year == selectedYear)
+                .ToList() ?? new List<Budget>();
+
+            // Monthly summaries and column totals
             var monthlySummaries = new List<(int Month, decimal Income, decimal Expenses, decimal Budget)>();
+            decimal totalIncomeSum = 0;
+            decimal totalExpensesSum = 0;
+            decimal totalBudgetSum = 0;
+            decimal totalDifferenceSum = 0;
+            decimal totalBudgetDiffSum = 0;
 
             for (int month = 1; month <= 12; month++)
             {
-                decimal monthIncome = yearIncomes.Where(i => i.Month == month).Sum(i => i.Amount);
-                decimal monthExpenses = yearExpenses.Where(e => e.Month == month).Sum(e => e.Amount);
-                decimal monthBudget = yearBudgets.Where(b => b.Month == month).Sum(b => b.Amount);
+                decimal monthIncome = yearIncomes
+                    .Where(i => i.Month == month)
+                    .Sum(i => i.Amount);
+
+                decimal monthExpenses = yearExpenses
+                    .Where(e => e.Month == month)
+                    .Sum(e => e.Amount);
+
+                decimal monthBudget = yearBudgets
+                    .Where(b => b.Month == month)
+                    .Sum(b => b.Amount);
+
+                decimal monthDifference = monthIncome - monthExpenses;
+                decimal monthBudgetDiff = monthBudget - monthExpenses;
 
                 monthlySummaries.Add((month, monthIncome, monthExpenses, monthBudget));
+
+                // Accumulate totals
+                totalIncomeSum += monthIncome;
+                totalExpensesSum += monthExpenses;
+                totalBudgetSum += monthBudget;
+                totalDifferenceSum += monthDifference;
+                totalBudgetDiffSum += monthBudgetDiff;
             }
 
-            // Create a DataGridView to display the overview
-            var dataGridView = new DataGridView
-            {
-                Location = new Point(20, 130),
-                Size = new Size(700, 300),
-                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
-                ScrollBars = ScrollBars.Vertical
-            };
-            mainPanel.Controls.Add(dataGridView);
-
-            dataGridView.Columns.Add("Month", "Month");
-            dataGridView.Columns.Add("Income", "Income");
-            dataGridView.Columns.Add("Expenses", "Expenses");
-            dataGridView.Columns.Add("Budget", "Budget");
-            dataGridView.Columns.Add("Difference", "Difference (Income - Expenses)");
-            dataGridView.Columns.Add("BudgetDiff", "Budget - Expenses");
-
+            // Add rows for each month
             foreach (var month in monthlySummaries)
             {
-                dataGridView.Rows.Add(
-                    $"{month.Month:00}/{year}",
+                yearlyDataGridView.Rows.Add(
+                    $"{month.Month:00}/{selectedYear}",
                     $"{month.Income:C}",
                     $"{month.Expenses:C}",
                     $"{month.Budget:C}",
@@ -1271,19 +1396,27 @@ namespace PersonalFinanceManager
                 );
             }
 
-            // Add yearly totals
-            decimal totalIncome = yearIncomes.Sum(i => i.Amount);
-            decimal totalExpenses = yearExpenses.Sum(e => e.Amount);
-            decimal totalBudget = yearBudgets.Sum(b => b.Amount);
+            // Add TOTAL row
+            int totalRowIndex = yearlyDataGridView.Rows.Add(
+                "TOTAL",
+                $"{totalIncomeSum:C}",
+                $"{totalExpensesSum:C}",
+                $"{totalBudgetSum:C}",
+                $"{totalDifferenceSum:C}",
+                $"{totalBudgetDiffSum:C}"
+            );
 
-            var totalLabel = new Label
+            // Style the TOTAL row
+            DataGridViewRow totalRow = yearlyDataGridView.Rows[totalRowIndex];
+            totalRow.DefaultCellStyle.Font = new Font(yearlyDataGridView.Font, FontStyle.Bold);
+
+            // Update totals label
+            var totalLabel = mainPanel.Controls.Find("totalLabel", true).FirstOrDefault() as Label;
+            if (totalLabel != null)
             {
-                Text = $"Year {year} Totals - Income: {totalIncome:C}, Expenses: {totalExpenses:C}, Budget: {totalBudget:C}, Net: {(totalIncome - totalExpenses):C}",
-                Location = new Point(20, 450),
-                AutoSize = true,
-                Font = new Font(this.Font, FontStyle.Bold)
-            };
-            mainPanel.Controls.Add(totalLabel);
+                totalLabel.Text = $"Year {selectedYear} Totals - Income: {totalIncomeSum:C}, Expenses: {totalExpensesSum:C}, " +
+                                 $"Budget: {totalBudgetSum:C}, Net: {totalDifferenceSum:C}";
+            }
         }
     }
 
