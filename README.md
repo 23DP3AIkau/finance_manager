@@ -10,8 +10,13 @@ The Personal Finance Manager is a Windows desktop application designed to help u
 - **Language:** C#
 - **UI:** Windows Forms .NET9.0
 - **Data saving:** JSON
-- **Papildu:** Git
+- **Additionally:** Git
 
+## Bundled Release:
+
+1) Download the [release](https://github.com/23DP3AIkau/finance_manager/releases/latest) or from [website](<https://23dp3aikau.github.io/finance_manager_website/>).
+2) Extract **all** files.
+3) Run FinanceManager.exe
 
 ### Key Features:
 - **Multiple Account Management**: Create and manage different financial accounts
