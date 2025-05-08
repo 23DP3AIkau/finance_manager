@@ -15,26 +15,27 @@
 
         private void InitializeComponent()
         {
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            mainPanel = new Panel();
+            SuspendLayout();
             // 
             // mainPanel
             // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(0, 0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(800, 600);
-            this.mainPanel.TabIndex = 0;
+            mainPanel.Dock = DockStyle.Fill;
+            mainPanel.Location = new Point(0, 0);
+            mainPanel.Name = "mainPanel";
+            mainPanel.Size = new Size(700, 562);
+            mainPanel.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
-            this.Controls.Add(this.mainPanel);
-            this.Name = "Form1";
-            this.Text = "Personal Finance Manager";
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(700, 562);
+            Controls.Add(mainPanel);
+            Name = "Form1";
+            Text = "Personal Finance Manager";
+            Load += Form1_Load;
+            ResumeLayout(false);
         }
 
         private System.Windows.Forms.Panel mainPanel;

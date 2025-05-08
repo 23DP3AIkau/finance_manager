@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -10,12 +11,17 @@ namespace PersonalFinanceManager
 {
     public partial class Form1 : Form
     {
+        // File path for storing account data
         private static string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data\\accounts.json");
         private List<Account> accounts = new List<Account>();
         private Account? currentAccount;
 
         public Form1()
         {
+            // Enable automatic DPI scaling to fix blurriness on Windows 11
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+
             InitializeComponent();
             InitializeUI();
             LoadAccounts();
@@ -27,9 +33,18 @@ namespace PersonalFinanceManager
             this.Text = "Personal Finance Manager";
             this.Size = new Size(800, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.Font = new Font("Segoe UI", 10);
+
+            // Use a scalable font that works well with DPI scaling
+            this.Font = new Font("Segoe UI", 9.75f, FontStyle.Regular, GraphicsUnit.Point);
+
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+
+            // Enable double buffering for smoother rendering
+            this.DoubleBuffered = true;
         }
 
+
+        /// Loads accounts from JSON file or creates a new file if it doesn't exist
         private void LoadAccounts()
         {
             string directoryPath = Path.GetDirectoryName(filePath);
@@ -54,20 +69,10 @@ namespace PersonalFinanceManager
                 MessageBox.Show("Error reading accounts file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 accounts = new List<Account>();
             }
-
-
-
-
-            // TEST ACCOUNT CREATION
-            bool testAccountExists = accounts.Any(a => a.AccountName == "Test Account");
-            
-            if (!testAccountExists)
-            {
-                accounts.Add(CreateTestAccount());
-                SaveAccounts();
-            }
         }
 
+
+        /// Saves all accounts to JSON file with pretty printing
         private void SaveAccounts()
         {
             var options = new JsonSerializerOptions { WriteIndented = true };
@@ -75,23 +80,11 @@ namespace PersonalFinanceManager
             File.WriteAllText(filePath, json);
         }
 
+
+        /// Displays the account selection screen with all available accounts
         private void ShowAccountSelection()
         {
             mainPanel.Controls.Clear();
-
-            if (accounts.Count == 0)
-            {
-                var createLabel = new Label
-                {
-                    Text = "No accounts found. Please create a new account.",
-                    Location = new Point(20, 20),
-                    AutoSize = true
-                };
-                mainPanel.Controls.Add(createLabel);
-
-                ShowCreateAccountForm();
-                return;
-            }
 
             var selectLabel = new Label
             {
@@ -140,7 +133,7 @@ namespace PersonalFinanceManager
             createButton.Click += (s, e) => ShowCreateAccountForm();
             mainPanel.Controls.Add(createButton);
 
-            // Create Test Account Button
+            // Create Test Account Button - useful for testing/demo purposes
             var createTestButton = new Button
             {
                 Text = "Create Test Account",
@@ -203,6 +196,8 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(exitButton);
         }
 
+
+        /// Shows the form for creating a new account
         private void ShowCreateAccountForm()
         {
             mainPanel.Controls.Clear();
@@ -254,6 +249,8 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(cancelButton);
         }
 
+
+        /// Displays the main menu with all available actions
         private void ShowMainMenu()
         {
             mainPanel.Controls.Clear();
@@ -285,12 +282,13 @@ namespace PersonalFinanceManager
             };
             mainPanel.Controls.Add(menuPanel);
 
+            // Main menu buttons
             var buttons = new[]
             {
                 new Button { Text = "1. Income", Tag = "1" },
                 new Button { Text = "2. Expense", Tag = "2" },
-                new Button { Text = "3. Calculate Totals", Tag = "3" },
-                new Button { Text = "4. Set Budgets", Tag = "4" },
+                new Button { Text = "3. Set Budgets", Tag = "3" },
+                new Button { Text = "4. Calculate Totals", Tag = "4" },
                 new Button { Text = "5. Monthly Overview", Tag = "5" },
                 new Button { Text = "6. Yearly Overview", Tag = "6" },
                 new Button { Text = "7. Exit Program", Tag = "7" }
@@ -305,6 +303,8 @@ namespace PersonalFinanceManager
             }
         }
 
+
+        /// Handles menu button clicks and navigates to the appropriate form
         private void MenuButton_Click(object? sender, EventArgs e)
         {
             var button = sender as Button;
@@ -317,10 +317,10 @@ namespace PersonalFinanceManager
                     ShowExpenseForm();
                     break;
                 case "3":
-                    ShowCalculateTotals();
+                    ShowSetBudgetsForm();
                     break;
                 case "4":
-                    ShowSetBudgetsForm();
+                    ShowCalculateTotals();
                     break;
                 case "5":
                     ShowMonthlyOverview();
@@ -334,6 +334,8 @@ namespace PersonalFinanceManager
             }
         }
 
+
+        /// Shows the form for adding income records
         private void ShowAddIncomeForm()
         {
             mainPanel.Controls.Clear();
@@ -457,6 +459,8 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(addButton);
         }
 
+
+        /// Shows the form for adding expense records
         private void ShowExpenseForm()
         {
             mainPanel.Controls.Clear();
@@ -510,7 +514,6 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(amountTextBox);
 
             // Expense category selection
-            
             categoryComboBox.Items.AddRange(new[] { "Utilities", "Groceries", "Housing", "Transportation", "Health Care", "Lifestyle", "Education" });
             mainPanel.Controls.Add(categoryComboBox);
 
@@ -582,6 +585,8 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(addButton);
         }
 
+
+        /// Shows the financial summary with filtering options
         private void ShowCalculateTotals()
         {
             mainPanel.Controls.Clear();
@@ -648,6 +653,7 @@ namespace PersonalFinanceManager
         }
 
 
+        /// Creates a test account with random data for demonstration purposes
         private Account CreateTestAccount()
         {
             var testAccount = new Account
@@ -662,11 +668,12 @@ namespace PersonalFinanceManager
             string[] incomeCategories = { "Active Income", "Portfolio Income", "Passive Income" };
             string[] expenseCategories = { "Utilities", "Groceries", "Housing", "Transportation", "Health Care", "Lifestyle" };
 
+            // Generate 5 years of test data (2023-2027)
             for (int year = 2023; year <= 2027; year++)
             {
                 for (int month = 1; month <= 12; month++)
                 {
-                    // Add incomes (2-4 per month)
+                    // Add random incomes (2-4 per month)
                     int incomeCount = random.Next(2, 5);
                     for (int i = 0; i < incomeCount; i++)
                     {
@@ -679,7 +686,7 @@ namespace PersonalFinanceManager
                         });
                     }
 
-                    // Add expenses (5-10 per month)
+                    // Add random expenses (5-10 per month)
                     int expenseCount = random.Next(5, 11);
                     for (int i = 0; i < expenseCount; i++)
                     {
@@ -712,10 +719,10 @@ namespace PersonalFinanceManager
             return testAccount;
         }
 
+        private Label? periodLabel; // Field to track the period label in financial summary
 
 
-        private Label? periodLabel; // Add this class field to keep track of the label
-
+        /// Updates the financial summary based on selected filters
         private void UpdateFinancialSummary(ComboBox monthComboBox, ComboBox yearComboBox)
         {
             // Clear previous summary controls except the title and filter controls
@@ -731,11 +738,13 @@ namespace PersonalFinanceManager
                 }
             }
 
+            // Determine filtering options
             bool filterByMonth = monthComboBox.SelectedIndex > 0;
             bool filterByYear = yearComboBox.SelectedIndex > 0;
             int? month = filterByMonth ? int.Parse(monthComboBox.SelectedItem.ToString() ?? "0") : null;
             int? year = filterByYear ? int.Parse(yearComboBox.SelectedItem.ToString() ?? "0") : null;
 
+            // Get filtered data
             var filteredIncomes = currentAccount?.Incomes ?? Enumerable.Empty<IncomeRecord>();
             var filteredExpenses = currentAccount?.Expenses ?? Enumerable.Empty<Expense>();
 
@@ -750,11 +759,12 @@ namespace PersonalFinanceManager
                     (!filterByYear || e.Year == year));
             }
 
+            // Calculate totals
             decimal totalIncome = filteredIncomes.Sum(i => i.Amount);
             decimal totalExpenses = filteredExpenses.Sum(e => e.Amount);
             decimal netIncome = totalIncome - totalExpenses;
 
-            // Update the period label text
+            // Update the period label text based on filters
             string periodText = "All Time";
             if (filterByMonth && !filterByYear)
             {
@@ -778,7 +788,7 @@ namespace PersonalFinanceManager
                     Location = new Point(20, 130),
                     AutoSize = true,
                     Font = new Font(this.Font, FontStyle.Bold),
-                    Name = "periodLabel" // Give it a name so we can find it later
+                    Name = "periodLabel"
                 };
                 mainPanel.Controls.Add(periodLabel);
             }
@@ -787,6 +797,7 @@ namespace PersonalFinanceManager
                 periodLabel.Text = $"Showing: {periodText}";
             }
 
+            // Display income total
             var incomeLabel = new Label
             {
                 Text = $"Total Income: {totalIncome:C}",
@@ -795,6 +806,7 @@ namespace PersonalFinanceManager
             };
             mainPanel.Controls.Add(incomeLabel);
 
+            // Display expenses by category
             var expensesLabel = new Label
             {
                 Text = "Expenses by Category:",
@@ -803,12 +815,13 @@ namespace PersonalFinanceManager
             };
             mainPanel.Controls.Add(expensesLabel);
 
-            // Group expenses by category
+            // Group expenses by category and order by total amount
             var expensesByCategory = filteredExpenses
                 .GroupBy(e => e.Category)
                 .Select(g => new { Category = g.Key, Total = g.Sum(e => e.Amount) })
                 .OrderByDescending(g => g.Total);
 
+            // Display each category's total
             int yPos = 220;
             foreach (var category in expensesByCategory)
             {
@@ -822,6 +835,7 @@ namespace PersonalFinanceManager
                 yPos += 30;
             }
 
+            // Display total expenses
             var totalExpensesLabel = new Label
             {
                 Text = $"Total Expenses: {totalExpenses:C}",
@@ -831,6 +845,7 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(totalExpensesLabel);
             yPos += 30;
 
+            // Display net income (income - expenses)
             var netIncomeLabel = new Label
             {
                 Text = $"Net Income: {netIncome:C}",
@@ -841,6 +856,8 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(netIncomeLabel);
         }
 
+
+        /// Shows the form for setting budgets
         private void ShowSetBudgetsForm()
         {
             mainPanel.Controls.Clear();
@@ -866,14 +883,14 @@ namespace PersonalFinanceManager
             var amountLabel = new Label
             {
                 Text = "Budget Amount:",
-                Location = new Point(20, 60),
+                Location = new Point(20, 130),
                 AutoSize = true
             };
             mainPanel.Controls.Add(amountLabel);
 
             var amountTextBox = new TextBox
             {
-                Location = new Point(20, 90),
+                Location = new Point(20, 160),
                 Size = new Size(200, 30)
             };
             mainPanel.Controls.Add(amountTextBox);
@@ -881,14 +898,14 @@ namespace PersonalFinanceManager
             var categoryLabel = new Label
             {
                 Text = "Category:",
-                Location = new Point(20, 130),
+                Location = new Point(20, 60),
                 AutoSize = true
             };
             mainPanel.Controls.Add(categoryLabel);
 
             var categoryComboBox = new ComboBox
             {
-                Location = new Point(20, 160),
+                Location = new Point(20, 90),
                 Size = new Size(200, 30),
                 DropDownStyle = ComboBoxStyle.DropDownList
             };
@@ -973,6 +990,8 @@ namespace PersonalFinanceManager
             mainPanel.Controls.Add(setButton);
         }
 
+
+        /// Shows the monthly overview with detailed breakdown
         private void ShowMonthlyOverview()
         {
             mainPanel.Controls.Clear();
@@ -1045,6 +1064,76 @@ namespace PersonalFinanceManager
 
             // Show current month by default
             UpdateMonthlyOverview(DateTime.Now.Month, DateTime.Now.Year);
+        }
+
+
+        /// Deletes the selected row from the monthly overview
+        private void DeleteSelectedRow(TabControl tabControl, int month, int year)
+        {
+            if (tabControl.SelectedTab == null) return;
+
+            var currentGrid = tabControl.SelectedTab.Controls.OfType<DataGridView>().FirstOrDefault();
+            if (currentGrid == null || currentGrid.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a row to delete", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            var selectedRow = currentGrid.SelectedRows[0];
+            string category = selectedRow.Cells["Category"].Value?.ToString();
+            string amountText = selectedRow.Cells[1].Value?.ToString().Trim('$', ' ');
+
+            if (decimal.TryParse(amountText, NumberStyles.Currency, CultureInfo.CurrentCulture, out decimal amount))
+            {
+                string tabName = tabControl.SelectedTab.Text;
+                string confirmMessage = $"Delete this {tabName.ToLower()} record?\nCategory: {category}\nAmount: {amount:C}";
+
+                if (MessageBox.Show(confirmMessage, "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    // Remove from the appropriate collection based on tab
+                    switch (tabName)
+                    {
+                        case "Incomes":
+                            var incomeToRemove = currentAccount.Incomes.FirstOrDefault(i =>
+                                i.Month == month &&
+                                i.Year == year &&
+                                i.Category == category &&
+                                i.Amount == amount);
+                            if (incomeToRemove != null)
+                                currentAccount.Incomes.Remove(incomeToRemove);
+                            break;
+
+                        case "Expenses":
+                            var expenseToRemove = currentAccount.Expenses.FirstOrDefault(e =>
+                                e.Month == month &&
+                                e.Year == year &&
+                                e.Category == category &&
+                                e.Amount == amount);
+                            if (expenseToRemove != null)
+                                currentAccount.Expenses.Remove(expenseToRemove);
+                            break;
+
+                        case "Budgets":
+                            var budgetToRemove = currentAccount.Budgets.FirstOrDefault(b =>
+                                b.Month == month &&
+                                b.Year == year &&
+                                b.Category == category &&
+                                b.Amount == amount);
+                            if (budgetToRemove != null)
+                                currentAccount.Budgets.Remove(budgetToRemove);
+                            break;
+                    }
+
+                    // Save changes and refresh
+                    SaveAccounts();
+                    UpdateMonthlyOverview(month, year);
+                    MessageBox.Show("Record deleted successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Could not parse the amount value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void UpdateMonthlyOverview(int month, int year)
@@ -1125,6 +1214,17 @@ namespace PersonalFinanceManager
             };
             mainPanel.Controls.Add(tabControl);
 
+            // Add Delete button
+            var deleteButton = new Button
+            {
+                Text = "Delete Selected",
+                Location = new Point(550, 250),
+                Size = new Size(150, 30),
+            };
+            deleteButton.Click += (s, e) => DeleteSelectedRow(tabControl, month, year);
+            mainPanel.Controls.Add(deleteButton);
+
+
             // Incomes tab
             var incomesTab = new TabPage("Incomes");
             tabControl.TabPages.Add(incomesTab);
@@ -1134,8 +1234,8 @@ namespace PersonalFinanceManager
                 Dock = DockStyle.Fill,
                 AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
                 ReadOnly = true,
-                AllowUserToAddRows = false, // Removes extra blank row
-                RowTemplate = { Height = 22 } // Taller rows (default is 20)
+                AllowUserToAddRows = false,
+                RowTemplate = { Height = 22 }
             };
             incomesGrid.Columns.Add("Category", "Category");
             incomesGrid.Columns.Add("Amount", "Amount");
@@ -1148,8 +1248,7 @@ namespace PersonalFinanceManager
 
             // Add total row to incomes
             incomesGrid.Rows.Add("TOTAL", $"{totalIncome:C}");
-            incomesGrid.Rows[incomesGrid.Rows.Count - 1].DefaultCellStyle.Font =
-                new Font(incomesGrid.Font, FontStyle.Bold);
+            incomesGrid.Rows[incomesGrid.Rows.Count - 1].DefaultCellStyle.Font = new Font(incomesGrid.Font, FontStyle.Bold);
 
             // Expenses tab
             var expensesTab = new TabPage("Expenses");
@@ -1174,8 +1273,7 @@ namespace PersonalFinanceManager
 
             // Add total row to expenses
             expensesGrid.Rows.Add("TOTAL", $"{totalExpenses:C}");
-            expensesGrid.Rows[expensesGrid.Rows.Count - 1].DefaultCellStyle.Font =
-                new Font(expensesGrid.Font, FontStyle.Bold);
+            expensesGrid.Rows[expensesGrid.Rows.Count - 1].DefaultCellStyle.Font = new Font(expensesGrid.Font, FontStyle.Bold);
 
             // Budgets tab
             var budgetsTab = new TabPage("Budgets");
@@ -1202,10 +1300,8 @@ namespace PersonalFinanceManager
 
             foreach (var budget in monthlyBudgets)
             {
-                decimal categoryExpenses = expensesByCategory.ContainsKey(budget.Category) ?
-                    expensesByCategory[budget.Category] : 0;
-                decimal percentage = budget.Amount > 0 ?
-                    (categoryExpenses / budget.Amount) * 100 : 0;
+                decimal categoryExpenses = expensesByCategory.ContainsKey(budget.Category) ? expensesByCategory[budget.Category] : 0;
+                decimal percentage = budget.Amount > 0 ? (categoryExpenses / budget.Amount) * 100 : 0;
                 string status = percentage > 100 ? "OVER" : "UNDER";
 
                 budgetsGrid.Rows.Add(
@@ -1232,7 +1328,7 @@ namespace PersonalFinanceManager
                 new Font(budgetsGrid.Font, FontStyle.Bold);
         }
 
-        private DataGridView yearlyDataGridView; // Add this class field
+        private DataGridView yearlyDataGridView;
 
         private void ShowYearlyOverview()
         {
@@ -1285,7 +1381,7 @@ namespace PersonalFinanceManager
             };
             mainPanel.Controls.Add(yearlyDataGridView);
 
-            // Add columns (only once)
+            // Add columns
             yearlyDataGridView.Columns.Clear();
             yearlyDataGridView.Columns.Add("Month", "Month");
             yearlyDataGridView.Columns.Add("Income", "Income");
@@ -1386,7 +1482,7 @@ namespace PersonalFinanceManager
             // Add rows for each month
             foreach (var month in monthlySummaries)
             {
-                yearlyDataGridView.Rows.Add(
+                int rowIndex = yearlyDataGridView.Rows.Add(
                     $"{month.Month:00}/{selectedYear}",
                     $"{month.Income:C}",
                     $"{month.Expenses:C}",
@@ -1394,6 +1490,12 @@ namespace PersonalFinanceManager
                     $"{(month.Income - month.Expenses):C}",
                     $"{(month.Budget - month.Expenses):C}"
                 );
+
+                // Make every cell in this row read-only
+                for (int col = 0; col < yearlyDataGridView.Columns.Count; col++)
+                {
+                    yearlyDataGridView.Rows[rowIndex].Cells[col].ReadOnly = true;
+                }
             }
 
             // Add TOTAL row
@@ -1406,17 +1508,25 @@ namespace PersonalFinanceManager
                 $"{totalBudgetDiffSum:C}"
             );
 
+            // Make TOTAL row cells read-only
+            for (int col = 0; col < yearlyDataGridView.Columns.Count; col++)
+            {
+                yearlyDataGridView.Rows[totalRowIndex].Cells[col].ReadOnly = true;
+            }
+
             // Style the TOTAL row
             DataGridViewRow totalRow = yearlyDataGridView.Rows[totalRowIndex];
             totalRow.DefaultCellStyle.Font = new Font(yearlyDataGridView.Font, FontStyle.Bold);
+        }
 
-            // Update totals label
-            var totalLabel = mainPanel.Controls.Find("totalLabel", true).FirstOrDefault() as Label;
-            if (totalLabel != null)
-            {
-                totalLabel.Text = $"Year {selectedYear} Totals - Income: {totalIncomeSum:C}, Expenses: {totalExpensesSum:C}, " +
-                                 $"Budget: {totalBudgetSum:C}, Net: {totalDifferenceSum:C}";
-            }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 
