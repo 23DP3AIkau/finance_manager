@@ -48,7 +48,7 @@ The Personal Finance Manager is a Windows desktop application designed to help u
      6\. Yearly Overview - Annual financial summary<br>
      7\. Exit Program - Close the application
 
-3. **Income/Expense Entry Forms**
+3. **Income/Expense/Budgets Entry Forms**
    - Dropdown to select category
    - Text field for amount
    - Month/Year selection
@@ -70,49 +70,22 @@ The Personal Finance Manager is a Windows desktop application designed to help u
 ### Account Management
 
 #### Creating a New Account
-1. From the Account Selection screen, click "Create New Account"
-2. Enter a name for your account
-3. Click "Create Account"
-4. The new account will appear in your account list
+- From the Account Selection screen, click "Create new Account", enter a name for your account and finally click Create Account, a new account will appear in account list
 
 #### Selecting an Account
-1. From the Account Selection screen, click on an account in the list
-2. Click "Select Account"
-3. You will be taken to the Main Menu for that account
+- Choose an account in Account Selection screen and then click on "Select Account" and you will be taken to the main menu for that account.
 
 #### Deleting an Account
-1. From the Account Selection screen, select an account from the list
-2. Click "Delete Account"
-3. Confirm the deletion when prompted
+- Choose an account in Account Selection screen and then click on "Delete Account" and the account will be deleted after you confirm it.
 
-### Recording Income
+#### Recording Income
+- Click on "Income" button and then you can choose an income category, then you will have to enter amount in $ and select the month and year, finally click "Add Income" to confirm.
 
-1. From the Main Menu, click "Income"
-2. Select an income category from the dropdown:
-   - Active Income (salary, wages)
-   - Portfolio Income (investments)
-   - Passive Income (rental, royalties)
-   - Other
-3. Enter the amount
-4. Select the month and year
-5. Click "Add Income"
-
-### Recording Expenses
-
-1. From the Main Menu, click "Expense"
-2. Select an expense category from the dropdown:
-   - Utilities, Groceries, Housing, Transportation, etc.
-3. Enter the amount
-4. Select the month and year
-5. Click "Add Expense"
+#### Recording Expenses
+- Click on "Expense" button and then you can choose an expense category, then you will have to enter amount in $ and select the month and year, finally click "Add Expense" to confirm.
 
 ### Setting Budgets
-
-1. From the Main Menu, click "Set Budgets"
-2. Select a category from the dropdown
-3. Enter the budget amount
-4. Select the month and year
-5. Click "Set Budget"
+- Click on "Set Budget" button and then you can choose an expense category, then you will have to enter amount in $ and select the month and year, finally click "Set Budget" to confirm.
 
 Note: Setting a budget for the same category and period will overwrite any existing budget.
 
@@ -165,7 +138,6 @@ Note: Setting a budget for the same category and period will overwrite any exist
 - Set realistic budgets based on your historical spending
 - Use the monthly overview to identify spending patterns
 - Compare yearly data to track financial progress over time
-- Delete test accounts when you're ready to use real data
 
 ## Data Storage
 
