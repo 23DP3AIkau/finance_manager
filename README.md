@@ -165,6 +165,6 @@ Note: Setting a budget for the same category and period will overwrite any exist
 ## Data Storage
 
 All account data is saved automatically in a JSON file located at:
-`[Application Folder]\data\accounts.json`
+`FinanceManager\data\accounts.json`
 
 The application handles all file operations automatically - no manual saving is required.
