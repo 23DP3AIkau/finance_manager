@@ -35,13 +35,13 @@ The Personal Finance Manager is a Windows desktop application designed to help u
 2. **Main Menu**
    - Displays current account name
    - Seven main function buttons:
-     1 Income - Add income records
-     2 Expense - Add expense records
-     3 Set Budgets - Define monthly budgets
-     4 Calculate Totals - View financial summaries
-     5 Monthly Overview - Detailed monthly reports
-     6 Yearly Overview - Annual financial summary
-     7 Exit Program - Close the application
+     \1. Income - Add income records<br>
+     \2. Expense - Add expense records<br>
+     \3. Set Budgets - Define monthly budgets<br>
+     \4. Calculate Totals - View financial summaries<br>
+     \5. Monthly Overview - Detailed monthly reports<br>
+     \6. Yearly Overview - Annual financial summary<br>
+     \7. Exit Program - Close the application
 
 3. **Income/Expense Entry Forms**
    - Dropdown to select category
